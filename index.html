@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To-Do List</title>
+		<link rel="shortcut icon" href="images/task-list.png" type="image/png" />
+		<link rel="stylesheet" href="./css/style.min.css" />
+		<script src="./js/main.js" defer></script>
+	</head>
+	<body>
+		<main class="main">
+			<div class="container">
+				<section class="todo-app">
+					<h2 class="todo-app__title">
+						To-Do List<img
+							src="./images/title-icon.svg"
+							alt="task-list-images"
+							class="todo-app__icon"
+						/>
+					</h2>
+					<div class="todo-app__row">
+						<input type="text" id="input-box" placeholder="Add your text" />
+						<button onclick="addTask()">Add</button>
+					</div>
+					<ul class="todo-app__list" id="list-container">
+						<!-- <li class="checked">Task 1</li>
+						<li>Task 2</li>
+						<li>Task 3</li> -->
+					</ul>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
