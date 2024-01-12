@@ -6,7 +6,7 @@ body {
 
 .container {
 	width: 100%;
-	min-height: 100dvh;
+	min-height: 100vh;
 	background: linear-gradient(90deg, #264653, #2a9d8f);
 	padding: 10px;
 }
@@ -30,6 +30,7 @@ body {
 
 	&__icon {
 		width: 35px;
+		height: 35px;
 		margin-left: 10px;
 	}
 
@@ -101,6 +102,37 @@ body {
 		text-decoration: line-through;
 		&::before {
 			background-image: url(../images/checked-circle.png);
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.todo-app {
+		padding: 20px 15px 30px;
+		&__title {
+			font-size: 1.8rem;
+		}
+		&__icon {
+			width: 30px;
+			height: 30px;
+		}
+
+		button {
+			padding: 12px 40px;
+			background: #003566;
+			color: #fff;
+			font-size: 1rem;
+			border-radius: 40px;
+		}
+
+		&__list li {
+			font-size: 1.2rem;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 24px;
+				height: 24px;
+			}
 		}
 	}
 }

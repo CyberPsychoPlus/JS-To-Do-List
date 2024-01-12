@@ -94,7 +94,7 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100dvh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#264653), to(#2a9d8f));
   background: linear-gradient(90deg, #264653, #2a9d8f);
   padding: 10px;
@@ -122,6 +122,7 @@ body {
 }
 .todo-app__icon {
   width: 35px;
+  height: 35px;
   margin-left: 10px;
 }
 .todo-app__row {
@@ -199,4 +200,33 @@ body {
 }
 .todo-app .checked::before {
   background-image: url(../images/checked-circle.png);
+}
+
+@media (max-width: 480px) {
+  .todo-app {
+    padding: 20px 15px 30px;
+  }
+  .todo-app__title {
+    font-size: 1.8rem;
+  }
+  .todo-app__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .todo-app button {
+    padding: 12px 40px;
+    background: #003566;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 40px;
+  }
+  .todo-app__list li {
+    font-size: 1.2rem;
+  }
+  .todo-app__list li::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
 }
